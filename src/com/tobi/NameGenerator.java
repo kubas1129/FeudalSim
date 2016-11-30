@@ -7,51 +7,35 @@ import java.util.Random;
  */
 public class NameGenerator {
     Random random;
+    Alphabet alphabet;
 
-    public NameGenerator(){
+    public NameGenerator(Alphabet alphabet){
         random=new Random();
+        this.alphabet=alphabet;
     }
 
-    public char getFirstLetter(){
-        char letter= (char) (random.nextInt(25)+65);
-        return letter;
-    }
-
-    public char getSamo(){
-        int letterNum =random.nextInt(5);
-        char letter;
-        switch (letterNum){
-            case 0:
-                letter='a';
-                break;
-            case 1:
-                letter='e';
-                break;
-            case 2:
-                letter='i';
-                break;
-            case 3:
-                letter='o';
-                break;
-            default:
-                letter='u';
-                break;
+    public String getFirstLetter(){
+        String letter= alphabet.getLetter(random.nextInt(alphabet.size));
+        char capitalLetter=letter.charAt(0);
+        String newLetter=new String();
+        capitalLetter-=32;
+        newLetter+=capitalLetter;
+        for(int i=1;i<letter.length();i++){
+            newLetter+=letter.charAt(i);
         }
-        return letter;
+        return newLetter;
     }
+
 
     public String generateName(){
 
-        int nameLength=random.nextInt(6)+3;
+        int nameLength=random.nextInt(2)+2;
         String name=new String();
         name+=getFirstLetter();
         for(int i=1;i<nameLength;i++){
-            if(name.charAt(i-1)=='a'||name.charAt(i-1)=='e'||name.charAt(i-1)=='i'||name.charAt(i-1)=='o'||name.charAt(i-1)=='u'){
-                name+=(char)(random.nextInt(25)+97);
-            }else{
-                name+=getSamo();
-            }
+            name+=alphabet.getLetter(random.nextInt(alphabet.size));
         }
+
         return name;
     }
 }

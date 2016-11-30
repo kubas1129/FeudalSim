@@ -1,7 +1,13 @@
 package com.tobi;
 
+import com.tobi.aiplugin.AIPlugin;
+import com.tobi.aiplugin.HumanPlugin;
+import com.tobi.enums.JobName;
+import com.tobi.enums.Resource;
 import com.tobi.enums.SocialStatus;
+import com.tobi.enums.Traits;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -11,29 +17,99 @@ import java.util.Random;
 public class Citizen {
     static int number=0;
     int id;
-    int age;
-    Job ambition,job;
-    int iq, strength, charisma;
-    double wealth;
+    double age;
+    public Job ambition,job;
+    public int iq, strength, charisma;
+    public double wealth;
+    boolean fed;
+    boolean alive;
+    public double sickness;
     String name, surname;
-    Citizen mother,father;
+    Citizen mother,father, partner, expartner;
     String sex;
-    SocialStatus status;
+    public SocialStatus status;
+    public Town inhabitedTown;
     LinkedList<Relationship> relationships=new LinkedList<>();
+    LinkedList<Citizen> children=new LinkedList<>();
+    HashMap<Resource,Double> resources=new HashMap<>();
+    public  LinkedList<AIPlugin> aiPlugins=new LinkedList<>();
+
+    public void die(){
+        double wealthPart;
+        int aliveChildren=0;
+        alive=false;
+        if(partner!=null&&partner.alive){
+            partner.wealth+=wealth;
+            wealth=0;
+            partner.partner=null;
+            partner.expartner=this;
+        }else if(!children.isEmpty()){
+            for(Citizen citizen:children){
+                if(citizen.alive)aliveChildren++;
+            }
+            wealthPart=wealth/aliveChildren;
+            for(Citizen citizen:children){
+                if(citizen.alive)citizen.wealth+=wealthPart;
+            }
+        }
+        System.out.println(name+" "+surname+" "+wealth+" aged "+(int)age+" passed away this month.");
+    }
+
+    public void fallSick(){
+        Random random=new Random();
+        sickness+=((double)random.nextInt(10)-5.)+(age/10.);
+    }
+
+    public void genRelationships(LinkedList<Citizen> citizens){
+        for(Citizen citizen:citizens){
+            relationships.add(new Relationship(new Random().nextInt(100),citizen));
+
+        }
+    }
+
+    public void lookForRelationship(LinkedList<Citizen> citizens){
+        for(Citizen citizen:citizens){
+            if(citizen!=this&&citizen.age>12&&this.age>12&&this.partner==null&&citizen.partner==null&&(citizen.age-this.age<11&&citizen.age-this.age>-11)){
+                if((this.sex=="male"&&citizen.sex=="female")){
+                    citizen.askToMarry(this);
+                }
+            }
+        }
+    }
+
+    public void askToMarry(Citizen citizen){
+        for(Relationship relationship:relationships){
+            if(relationship.target==citizen){
+                if(relationship.value>60 && citizen.wealth>0.2 && (citizen.job!=new Jobs().getJob(JobName.Unemployed) || citizen.job!=new Jobs().getJob(JobName.Beggar))){
+                    marry(citizen);
+                    citizen.marry(this);
+                }
+            }
+        }
+    }
+
+    public void marry(Citizen citizen){
+        if(sex!="male"){
+            this.surname=citizen.surname;
+        }
+        partner=citizen;
+        System.out.println(citizen.name+" and "+this.name+" are both now "+surname);
+    }
 
     public void genStats(){
         Random random=new Random();
-        NameGenerator nameGenerator=new NameGenerator();
+        NameGenerator nameGenerator=new NameGenerator(WorldVariables.alphabet);
         iq=random.nextInt(101);
+        sickness=(double)random.nextInt(101);
         strength=random.nextInt(101);
         charisma=random.nextInt(101);
-        age=random.nextInt(40);
+        age=(double)random.nextInt(28)+12.;
         if(random.nextInt(2)%2==0){
             sex="male";
         }else{
             sex="female";
         }
-        wealth=((1/(random.nextInt(10000)+1.))*10000.)-1;
+        wealth=((1./(random.nextInt(10000)+1.))*10000.)-1.;
         name=nameGenerator.generateName();
         surname=nameGenerator.generateName();
     }
@@ -55,9 +131,20 @@ public class Citizen {
     public Citizen(SocialStatus status){
         ambition=new Jobs().getAmbition();
         this.status=status;
+        alive=true;
         genStats();
         number++;
         id=number;
+    }
+    public Citizen(SocialStatus status, Town town){
+        ambition=new Jobs().getAmbition();
+        this.status=status;
+        alive=true;
+        genStats();
+        number++;
+        id=number;
+        this.inhabitedTown=town;
+        aiPlugins.add(new HumanPlugin(this));
     }
     public Citizen(Job job, Citizen mother, Citizen father,SocialStatus status){
         ambition=new Jobs().getAmbition();
@@ -80,6 +167,15 @@ public class Citizen {
         if(job!=null){
             System.out.println("Job: "+job.name+"\n");
         }
+    }
+
+    public AIPlugin getPlugin(JobName jobName){
+        for(AIPlugin aiPlugin:aiPlugins){
+            if(aiPlugin.getPluginJob()==jobName){
+                return aiPlugin;
+            }
+        }
+        return null;
     }
 
 }

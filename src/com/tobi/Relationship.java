@@ -11,6 +11,10 @@ public class Relationship {
     public Relationship(){
 
     }
+    public Relationship(int value, Citizen target) {
+        this.target = target;
+        this.value = value;
+    }
     public Relationship(int value, Citizen target, String type){
         this.target=target;
         this.value=value;

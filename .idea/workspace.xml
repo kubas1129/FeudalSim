@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2ed9cab-fd50-4e64-bd39-55fe6bf89ebe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/House.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/enums/Amount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/enums/Resource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/enums/SocialStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Building.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Building.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/Month.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/enums/Traits.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tobi/enums/Weather.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Building.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/tobi/Building.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Citizen.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Citizen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/House.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/House.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Job.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Job.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Jobs.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Jobs.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Main.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/NameGenerator.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/NameGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Relationship.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Relationship.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/Town.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/Town.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/city/com/tobi/enums/Resource.class" afterPath="$PROJECT_DIR$/out/production/city/com/tobi/enums/Resource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Building.java" afterPath="$PROJECT_DIR$/src/com/tobi/Building.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Citizen.java" afterPath="$PROJECT_DIR$/src/com/tobi/Citizen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/House.java" afterPath="$PROJECT_DIR$/src/com/tobi/House.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Job.java" afterPath="$PROJECT_DIR$/src/com/tobi/Job.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Jobs.java" afterPath="$PROJECT_DIR$/src/com/tobi/Jobs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Main.java" afterPath="$PROJECT_DIR$/src/com/tobi/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/NameGenerator.java" afterPath="$PROJECT_DIR$/src/com/tobi/NameGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Relationship.java" afterPath="$PROJECT_DIR$/src/com/tobi/Relationship.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/Town.java" afterPath="$PROJECT_DIR$/src/com/tobi/Town.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tobi/enums/Resource.java" afterPath="$PROJECT_DIR$/src/com/tobi/enums/Resource.java" />
     </list>
     <ignored path="city.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +50,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="342">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -51,32 +60,32 @@
       <file leaf-file-name="Citizen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            <state relative-caret-position="317">
+              <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="method#die#0;class#Citizen#0" expanded="false" />
+                <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+                <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+                <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+                <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+                <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+                <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+                <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+                <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+                <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+                <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+                <element signature="method#write#0;class#Citizen#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/SocialStatus.java">
+      <file leaf-file-name="AIPlugin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/AIPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Town.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,73 +93,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Relationship.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/Relationship.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Building.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/Building.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/Resource.java">
+      <file leaf-file-name="HumanPlugin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/HumanPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Amount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/Amount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="House.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/House.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
               <folding>
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jobs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <file leaf-file-name="HealerPlugin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/HealerPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="126">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Month.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Town.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+                <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+                <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+                <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+                <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+                <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+                <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+                <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+                <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+                <element signature="method#Town#0;class#Town#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,8 +165,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,22 +182,35 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/tobi/Job.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/Ambitions.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/NameGenerator.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/Relationship.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/Amount.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/House.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/SocialStatus.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/Citizen.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/Main.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/Resource.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/enums/Amount.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/enums/SocialStatus.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/enums/Resource.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/Traits.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/House.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/Weather.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Relationship.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/Building.java" />
-        <option value="$PROJECT_DIR$/src/com/tobi/Town.java" />
+        <option value="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/LinkedList.class" />
+        <option value="$PROJECT_DIR$/out/production/city/com/tobi/Main.class" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Alphabet.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/NameGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/Resource.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/Job.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/Infrastructure.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/WorldVariables.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Job.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Main.java" />
         <option value="$PROJECT_DIR$/src/com/tobi/Jobs.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/enums/JobName.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Town.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/aiplugin/AIPlugin.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Citizen.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/aiplugin/HumanPlugin.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/Month.java" />
+        <option value="$PROJECT_DIR$/src/com/tobi/aiplugin/HealerPlugin.java" />
       </list>
     </option>
   </component>
@@ -204,9 +223,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="69" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1297" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -233,6 +252,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,13 +315,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PR_lab/lab_6/Histogram_test.java" />
+    <property name="SearchEverywhereHistoryKey" value="wealth&#9;PSI&#9;JAVA://com.tobi.Citizen#wealth" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -543,6 +563,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f2ed9cab-fd50-4e64-bd39-55fe6bf89ebe" name="Default" comment="" />
@@ -554,7 +577,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="24" width="1297" height="744" extended-state="6" />
+    <frame x="69" y="-4" width="1297" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -565,12 +588,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8360656" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3099851" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980725" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -581,14 +603,49 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3099851" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980725" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39791358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -597,196 +654,634 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/NameGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="1008">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
           <folding>
-            <element signature="e#165#166#0" expanded="false" />
-            <element signature="e#200#201#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="1026">
+          <caret line="175" column="90" selection-start-line="175" selection-start-column="90" selection-end-line="175" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Relationship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="468">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_91/src.zip!/java/util/LinkedList.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/WorldVariables.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/NameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding>
-            <element signature="e#165#166#0" expanded="false" />
-            <element signature="e#200#201#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/House.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Relationship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="175" column="90" selection-start-line="175" selection-start-column="90" selection-end-line="175" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="342">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/WorldVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="175" column="90" selection-start-line="175" selection-start-column="90" selection-end-line="175" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/WorldVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="175" column="90" selection-start-line="175" selection-start-column="90" selection-end-line="175" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="35" column="94" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="35" column="94" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/PR_lab/lab_6/Histogram_test.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/WorldVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/JobName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/SocialStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/Amount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/enums/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tobi/Building.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Jobs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="289">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tobi/Town.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        <state relative-caret-position="543">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#citizenDeath#0;class#Town#0" expanded="false" />
+            <element signature="method#genHouses#0;class#Town#0" expanded="false" />
+            <element signature="method#isThereJob#0;class#Town#0" expanded="false" />
+            <element signature="method#assignJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#genDemand#0;class#Town#0" expanded="false" />
+            <element signature="method#genPrices#0;class#Town#0" expanded="false" />
+            <element signature="method#purchaseResources#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownMembers#0;class#Town#0" expanded="false" />
+            <element signature="method#writeTownJobs#0;class#Town#0" expanded="false" />
+            <element signature="method#Town#0;class#Town#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#die#0;class#Citizen#0" expanded="false" />
+            <element signature="method#fallSick#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genRelationships#0;class#Citizen#0" expanded="false" />
+            <element signature="method#lookForRelationship#0;class#Citizen#0" expanded="false" />
+            <element signature="method#askToMarry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#marry#0;class#Citizen#0" expanded="false" />
+            <element signature="method#genStats#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#0;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#1;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#2;class#Citizen#0" expanded="false" />
+            <element signature="method#Citizen#3;class#Citizen#0" expanded="false" />
+            <element signature="method#write#0;class#Citizen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/AIPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/Month.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setWeather#0;class#Month#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/HealerPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tobi/aiplugin/HumanPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
           </folding>
         </state>
       </provider>
