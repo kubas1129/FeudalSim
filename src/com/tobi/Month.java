@@ -1,5 +1,7 @@
 package com.tobi;
 
+import com.tobi.GUI.GuiSettings;
+import com.tobi.GUI.Logger;
 import com.tobi.enums.Resource;
 import com.tobi.enums.Weather;
 
@@ -31,7 +33,7 @@ public class Month {
         produce();
         relationsAndAge();
         end();
-        System.out.println("Month "+monthNumber);
+        Logger.addToLog("Month " + monthNumber);
     }
 
     public void setWeather(){
@@ -39,17 +41,20 @@ public class Month {
         if(random.nextInt(2)%2==0){
             weather=Weather.Cloudy;
         }
-        System.out.println(weather.toString());
+        if(GuiSettings.weather) {
+            Logger.addToLog(weather.toString());
+        }
     }
 
     public void end(){
         LinkedList<Citizen> diers=new LinkedList<>();
         for(Citizen citizen:town.citizens){
-            if((!citizen.fed)||citizen.sickness>=100){
+            if((!citizen.fed)||citizen.sickness>=100||citizen.monthsLeft<=0){
                 citizen.die();
                 town.citizenDeath(citizen);
                 diers.add(citizen);
             }
+            citizen.monthlyGain=0;
         }
         for(Citizen citizen:diers) {
             town.citizens.remove(citizen);
@@ -63,7 +68,9 @@ public class Month {
         town.genDemand(weather);
         town.genPrices();
         town.purchaseResources(weather);
-        System.out.println(town.prices.get(Resource.FOOD).doubleValue());
+        if(GuiSettings.foodPrice) {
+            Logger.addToLog("Food price this month is: " + town.prices.get(Resource.FOOD).doubleValue());
+        }
         town.executeAiPlugins();
     }
 

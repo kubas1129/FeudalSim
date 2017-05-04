@@ -1,6 +1,8 @@
 package com.tobi.aiplugin;
 
 import com.tobi.Citizen;
+import com.tobi.GUI.GuiSettings;
+import com.tobi.GUI.Logger;
 import com.tobi.enums.JobName;
 
 /**
@@ -9,7 +11,7 @@ import com.tobi.enums.JobName;
 public class HealerPlugin implements AIPlugin{
     double price;
     public JobName jobName=JobName.Healer;
-    Citizen host;
+    public Citizen host;
     int maxClients;
     int servedClients;
 
@@ -26,8 +28,11 @@ public class HealerPlugin implements AIPlugin{
         if(citizen.sickness<0)citizen.sickness=0;
         citizen.wealth-=price;
         host.wealth+=price;
+        host.monthlyGain+=price;
         servedClients++;
-        System.out.println("Heal"+price+" "+servedClients);
+        if(GuiSettings.debug) {
+            Logger.addToLog("Heal " + price);
+        }
     }
 
     @Override
@@ -49,7 +54,7 @@ public class HealerPlugin implements AIPlugin{
     @Override
     public void endMonth(){
         price=0.01*host.iq;
-        price*=(double)(servedClients+1)/maxClients;
+        price*=(double)(servedClients+5)/maxClients;
         servedClients=0;
     }
 

@@ -1,6 +1,8 @@
 package com.tobi;
 
 import com.sun.org.apache.regexp.internal.RE;
+import com.tobi.GUI.GuiSettings;
+import com.tobi.GUI.Logger;
 import com.tobi.aiplugin.AIPlugin;
 import com.tobi.aiplugin.HealerPlugin;
 import com.tobi.enums.*;
@@ -33,6 +35,9 @@ public class Town {
             for(AIPlugin aiPlugin:citizen.aiPlugins){
                 aiPlugin.endMonth();
             }
+        }
+        for(Citizen citizen:citizens){
+            citizen.recalibratePlugins();
         }
     }
 
@@ -190,6 +195,7 @@ public class Town {
                             citizen.fed = true;
                             seller.resources.replace(Resource.FOOD, seller.resources.get(Resource.FOOD).doubleValue() - 100);
                             seller.wealth += prices.get(Resource.FOOD).doubleValue();
+                            seller.monthlyGain += prices.get(Resource.FOOD).doubleValue();
                             citizen.wealth -= prices.get(Resource.FOOD).doubleValue();
                             break;
                         }
@@ -204,6 +210,7 @@ public class Town {
                             citizen.fed = true;
                             seller.resources.replace(Resource.FOOD, seller.resources.get(Resource.FOOD).doubleValue() - 50);
                             seller.wealth += prices.get(Resource.FOOD).doubleValue() / 2.;
+                            seller.monthlyGain += prices.get(Resource.FOOD).doubleValue() / 2;
                             citizen.wealth -= prices.get(Resource.FOOD).doubleValue() / 2.;
                             break;
                         }
@@ -221,7 +228,8 @@ public class Town {
                         house.hasWood=true;
                         house.getRichestCitizen().wealth-=prices.get(Resource.WOOD).doubleValue();
                         seller.wealth += prices.get(Resource.WOOD).doubleValue();
-                        seller.resources.replace(Resource.FOOD, seller.resources.get(Resource.FOOD).doubleValue() - demand.get(Resource.WOOD) / houses.size());
+                        seller.monthlyGain += prices.get(Resource.WOOD).doubleValue();
+                        seller.resources.replace(Resource.WOOD, seller.resources.get(Resource.WOOD).doubleValue() - demand.get(Resource.WOOD) / houses.size());
                     }else{
                         house.hasWood=false;
                     }
@@ -239,10 +247,21 @@ public class Town {
     }
 
     public void writeTownJobs(){
-        System.out.println("Population: "+population);
-        System.out.println("Houses: "+houses.size());
-        for(Citizen citizen:citizens){
-            System.out.print(citizen.job.name);
+        Logger.addToLog("Population: " + population);
+        Logger.addToLog("Houses: "+houses.size());
+        if(GuiSettings.jobs) {
+            HashMap<Job, Integer> jobHashMap = new HashMap<Job, Integer>();
+            for (Citizen citizen : citizens) {
+                if(jobHashMap.containsKey(citizen.job)){
+                    jobHashMap.replace(citizen.job,jobHashMap.get(citizen.job)+1);
+                }else{
+                    jobHashMap.put(citizen.job,1);
+                }
+            }
+            for (Job job :
+                    jobHashMap.keySet()){
+                Logger.addToLog(job.name+": "+jobHashMap.get(job));
+            }
         }
     }
 

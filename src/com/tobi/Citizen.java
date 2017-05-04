@@ -1,6 +1,9 @@
 package com.tobi;
 
+import com.tobi.GUI.GuiSettings;
+import com.tobi.GUI.Logger;
 import com.tobi.aiplugin.AIPlugin;
+import com.tobi.aiplugin.HealerPlugin;
 import com.tobi.aiplugin.HumanPlugin;
 import com.tobi.enums.JobName;
 import com.tobi.enums.Resource;
@@ -16,23 +19,26 @@ import java.util.Random;
  */
 public class Citizen {
     static int number=0;
-    int id;
-    double age;
+    public int id;
+    public int monthsLeft;
+    public double age;
     public Job ambition,job;
     public int iq, strength, charisma;
     public double wealth;
-    boolean fed;
-    boolean alive;
+    public double monthlyGain;
+    public  boolean fed;
+    public  boolean alive;
+    public boolean changedJob;
     public double sickness;
-    String name, surname;
-    Citizen mother,father, partner, expartner;
-    String sex;
+    public String name, surname;
+    public Citizen mother,father, partner, expartner;
+    public String sex;
     public SocialStatus status;
     public Town inhabitedTown;
-    LinkedList<Relationship> relationships=new LinkedList<>();
-    LinkedList<Citizen> children=new LinkedList<>();
-    HashMap<Resource,Double> resources=new HashMap<>();
-    public  LinkedList<AIPlugin> aiPlugins=new LinkedList<>();
+    public LinkedList<Relationship> relationships=new LinkedList<>();
+    public LinkedList<Citizen> children=new LinkedList<>();
+    public HashMap<Resource,Double> resources=new HashMap<>();
+    public LinkedList<AIPlugin> aiPlugins=new LinkedList<>();
 
     public void die(){
         double wealthPart;
@@ -52,12 +58,45 @@ public class Citizen {
                 if(citizen.alive)citizen.wealth+=wealthPart;
             }
         }
-        System.out.println(name+" "+surname+" "+wealth+" aged "+(int)age+" passed away this month.");
+        deathLog();
+    }
+
+    private void deathLog() {
+        if(GuiSettings.deaths) {
+            Logger.addToLog(name + " " + surname + " " + wealth + " aged " + (int) age + " passed away this month.");
+            if(wealth==0.0) {
+                String log = "He left all that he had to: ";
+                if(partner!=null&&partner.alive){
+                    log+=partner.name;
+                }else{
+                    for(Citizen citizen:children){
+                        if(citizen.alive)log+=citizen.name+" ";
+                    }
+                }
+                Logger.addToLog(log);
+            }else{
+                Logger.addToLog("He took whatever he possessed to his grave.");
+            }
+        }
     }
 
     public void fallSick(){
         Random random=new Random();
         sickness+=((double)random.nextInt(10)-5.)+(age/10.);
+        if(sickness>80)monthsLeft--;
+    }
+
+    public void recalibratePlugins(){
+        if(changedJob) {
+            aiPlugins=new LinkedList<>();
+            aiPlugins.add(new HumanPlugin(this));
+            switch (job.jobName) {
+                case Healer:
+                    aiPlugins.add(new HealerPlugin(this));
+                    break;
+            }
+            changedJob=false;
+        }
     }
 
     public void genRelationships(LinkedList<Citizen> citizens){
@@ -93,7 +132,9 @@ public class Citizen {
             this.surname=citizen.surname;
         }
         partner=citizen;
-        System.out.println(citizen.name+" and "+this.name+" are both now "+surname);
+        if(GuiSettings.marraiges) {
+            Logger.addToLog(citizen.name + " and " + this.name + " are both now " + surname);
+        }
     }
 
     public void genStats(){
@@ -145,6 +186,8 @@ public class Citizen {
         id=number;
         this.inhabitedTown=town;
         aiPlugins.add(new HumanPlugin(this));
+        monthsLeft=new Random().nextInt(360)+480;
+        changedJob=false;
     }
     public Citizen(Job job, Citizen mother, Citizen father,SocialStatus status){
         ambition=new Jobs().getAmbition();

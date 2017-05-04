@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class Job {
     String name;
-    JobName jobName;
+    public JobName jobName;
     int iq;
     int strength;
     int charisma;
